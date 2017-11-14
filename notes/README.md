@@ -155,7 +155,7 @@ eth.getBalance(eth.accounts[0])
 On the third machine, open up the RPC port to allow for communication with a client.
 
 ```bash
-geth --datadir eth-priv --networkid 15 --maxpeers 2 --port 30333 --rpc --rpcapi "web3,eth" --rpcaddr "0.0.0.0" --rpccorsdomain "*"
+geth --datadir eth-priv --networkid 15 --maxpeers 2 --port 30333 --rpc --rpcapi "web3,eth,personal" --rpcaddr "0.0.0.0" --rpccorsdomain "*"
 ```
 
 **NOTE** that, the `--rpcaddr` value has been setting for testing only. This value is **discouraged**.
